@@ -95,6 +95,8 @@ switch currmap
     mim(256:494,156:end) = 0;  mim(300:450,:) = 0;
     mim(:,1:149) = 0;
     map = binaryOccupancyMap(mim,mazeparm.res);
+  case 4
+    map = spiralmaze_mm();
 end
 
 % Store map quantities
